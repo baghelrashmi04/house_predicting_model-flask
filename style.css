@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Very light gray */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #007bff; /* Primary blue */
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"],
+select {
+    width: calc(100% - 22px); /* Adjust width for padding and border */
+    padding: 10px;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #28a745; /* Green button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+input[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+h2 {
+    text-align: center;
+    color: #28a745; /* Green prediction text */
+    margin-top: 30px;
+}
+
+p.error {
+    text-align: center;
+    color: #dc3545; /* Red error text */
+    margin-top: 20px;
+}
